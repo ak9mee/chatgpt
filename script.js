@@ -6,6 +6,9 @@ const apiKey = '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';
 // Initialize the client with your API key
 const client = new openai(apiKey);
 
+// Importing OpenAI
+import openai from '@openai/api';
+
 // Get the chat input and button elements
 const chatInput = document.querySelector('.chat-input input');
 const chatButton = document.querySelector('.chat-input button');
