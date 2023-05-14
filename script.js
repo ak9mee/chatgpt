@@ -1,8 +1,7 @@
+import openai from 'https://cdn.skypack.dev/@openai/api';
+
 // Replace 'YOUR_API_KEY' with your actual API key
 const apiKey = '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';
-
-// Import the OpenAI API client
-import openai from '@openai/api';
 
 // Initialize the client with your API key
 const client = new openai(apiKey);
