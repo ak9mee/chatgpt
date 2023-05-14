@@ -17,7 +17,7 @@ chatButton.addEventListener('click', (e) => {
   Completion.create({
     engine: 'davinci',
     prompt: message,
-    maxTokens: 150,
+    maxTokens: 1000,
     n: 1,
     stop: '\n',
     temperature: 0.5,
