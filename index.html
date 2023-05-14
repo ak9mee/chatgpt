@@ -2,10 +2,9 @@
 <html>
   <head>
     <title>Chatbot</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- your chatbot HTML code here -->
     <div class="chat-box"></div>
     <div class="chat-input">
       <input type="text" placeholder="Type a message...">
@@ -13,5 +12,11 @@
     </div>
     <script type="module" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@openai/api@0.6.0/build/web.bundle.js"></script>
+    <script>
+      // Check if user is on mobile and redirect if necessary
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "mobile/index.html";
+      }
+    </script>
   </body>
 </html>
